@@ -1007,7 +1007,7 @@ neighborhood in each dimension independently with a fixed step size::
     >>> def custmin(fun, x0, args=(), maxfev=None, stepsize=0.1,
     ...         maxiter=100, callback=None, **options):
     ...     bestx = x0
-    ...     besty = fun(x0)
+    ...     besty = fun(x0, *args)
     ...     funcalls = 1
     ...     niter = 0
     ...     improved = True
